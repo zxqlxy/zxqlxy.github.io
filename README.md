@@ -1,2 +1,2 @@
 # zxqlxy.github.io
-[To Photography](zxqlxy.github.io/photography)
+[To Photography](https://zxqlxy.github.io/photography)
