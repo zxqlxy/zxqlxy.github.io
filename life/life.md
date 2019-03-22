@@ -5,4 +5,5 @@
 - 09/2011 Matriculate in RDFZ
 - 08/2017 Matriculate as undergradute in Rice University
 - 12/2018 Visiting Peru
+- 03/2019 Visiting Columbia
 
