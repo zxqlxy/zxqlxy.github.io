@@ -3,7 +3,7 @@
 #############################
 
 # The title that appears on the tab
-title: Xinyun Liu's Gallery
+title: Xinyun Liu's gallery
 
 # The title on the web page
 full_name: Xinyun Liu
@@ -28,8 +28,8 @@ columns: 4
 max_height: 400
 
 # Handle
-instagram: zxqlxy1999
-500 px: liuxinyun6
+#instagra: zxqlxy1999
+#fivepx: liuxinyun6
 
 ######################
 # END OF CONFIG CODE #

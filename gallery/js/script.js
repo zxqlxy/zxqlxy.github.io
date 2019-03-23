@@ -29,4 +29,5 @@ window.onload = function() {
   if (igElem.href === 'https://www.instagram.com/') {
     document.querySelector('div.footer').remove();
   }
+
 };

@@ -229,20 +229,23 @@ plugins:
 
 
 
+#############################
+# For Gallery
+
 
 #############################
 #        TO FILL            #
 #############################
 
 # The title that appears on the tab
-title: Xinyun Liu's Gallery
+gallery_title: Xinyun Liu's Gallery
 
 # The title on the web page
 full_name: Xinyun Liu
 
 # The type of layout
 # Options: ROWS, SQUARES, COLUMNS
-layout_style: COLUMNS
+layout_style: ROWS
 
 # Variables below are default. Feel free to customize the values below, but do
 # not remove the property.
@@ -261,6 +264,8 @@ max_height: 400
 
 # Handle
 instagram: zxqlxy1999
+fivepx: liuxinyun6
+
 
 ######################
 # END OF CONFIG CODE #
