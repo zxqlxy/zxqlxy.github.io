@@ -3,7 +3,7 @@
 #############################
 
 # The title that appears on the tab
-title: Andy Zhang's Gallery
+title: Xinyun Liu's Gallery
 
 # The title on the web page
 full_name: Andy Zhang
@@ -19,7 +19,7 @@ layout_style: ROWS
 spacing: 10
 
 # Boolean(true|false): Shuffle the photos in the album
-shuffle: false
+shuffle: true
 
 # Integer: Number of columns for square or columns
 columns: 4
