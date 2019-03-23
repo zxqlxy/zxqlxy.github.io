@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Create this new website
+tags: html
 mathjax: true
 ---
 

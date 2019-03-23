@@ -175,8 +175,8 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
-    anonymize_ip: false # Anonymize IP tracking for Analytics
+    tracking_id : 136835643 # Google Analytics id for the site
+    anonymize_ip: true # Anonymize IP tracking for Analytics
 
 
 ## => Build
@@ -276,7 +276,7 @@ fivepx: liuxinyun6
 name: Gallery
 
 # Short description (goes below the title; it will also be used in the RSS feed)
-description: Photography Portfolio
+g_description: Photography Portfolio
 
 # Your name, as you want it to appear underneath each post and in the footer
 author_: Andy Zhang
