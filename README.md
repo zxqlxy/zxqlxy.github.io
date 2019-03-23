@@ -1,5 +1,5 @@
 # zxqlxy.github.io
-[To Photography](https://zxqlxy.github.io/photography)
+[To gallery](https://zxqlxy.github.io/gallery)
 
 [To practice](https://zxqlxy.github.io/practice)
 
