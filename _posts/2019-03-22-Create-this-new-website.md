@@ -10,5 +10,5 @@ In the main directory, I create the website using the [TeXt Theme](https://githu
 
 In the gallery directory, I create the photography profolio using [Andy Zhang's Templelate](https://github.com/zxqlxy/zxqlxy.github.io/tree/master/gallery)
 
-I found out that in order for the `_include` and `_config.yml` to work, both of them need to be in the parent directory.
+I found out that in order for the `_includes` and `_config.yml` to work, both of them need to be in the parent directory.
 <!--more-->
