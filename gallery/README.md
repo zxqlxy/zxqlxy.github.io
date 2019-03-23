@@ -36,8 +36,10 @@ $ git push origin gh-pages  # This pushes your gallery to be hosted!
 - Check out your site at {username}.github.io/gallery 🎉✨!
 
 *Important notes:* To ⏭speed⏭ up the loading time of your gallery, please make sure to compress your images. If you're running this on a macOS system, this is done automatically for you using `sips`!
+
 To reize the photos, `sips -Z 640 *.jpg` where 640 is the size of the photo and jpg is the format.
 To reformat the photos, `for i in [filename]; do sips -s format [image type] $i --out [destination]/$i.[extension];done`
+
 If you want Google Analytics, replace `_includes/ga.html` with your own snippet.
 
 
