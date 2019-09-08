@@ -15,7 +15,9 @@
     "stylelint": "stylelint --syntax scss \"_sass/**/*.scss\"",
     "stylelint-fix": "stylelint --syntax scss \"_sass/**/*.scss\" --fix",
     "gem-build": "rm -fv jekyll-text-theme-*.gem && gem build jekyll-text-theme.gemspec",
-    "gem-push": "gem push jekyll-text-theme-*.gem"
+    "gem-push": "gem push jekyll-text-theme-*.gem",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+
   },
   "repository": {
     "type": "git",
