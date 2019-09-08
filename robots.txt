@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://zxqlxy.github.io/sitemap.xml
-Host: https://zxqlxy.github.io
