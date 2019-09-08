@@ -1,45 +1,73 @@
 {
-  "name": "jekyll-text-theme",
-  "version": "2.2.4",
-  "description": "A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.",
-  "scripts": {
-    "build": "bundle exec jekyll build",
-    "serve": "bundle exec jekyll serve -H 0.0.0.0",
-    "default": "bundle exec jekyll serve -H 0.0.0.0 -t",
-    "dev": "bundle exec jekyll serve -H 0.0.0.0 -t --config ./docs/_config.dev.yml",
-    "demo-dev": "bundle exec jekyll serve -H 0.0.0.0 -t --config ./docs/_config.yml",
-    "demo-beta": "JEKYLL_ENV=beta bundle exec jekyll serve -H 0.0.0.0 -t --config ./docs/_config.yml",
-    "demo-production": "JEKYLL_ENV=production bundle exec jekyll serve -H 0.0.0.0 -t --config ./docs/_config.yml",
-    "eslint": "eslint \"_includes/**/*.js\"",
-    "eslint-fix": "eslint \"_includes/**/*.js\" --fix",
-    "stylelint": "stylelint --syntax scss \"_sass/**/*.scss\"",
-    "stylelint-fix": "stylelint --syntax scss \"_sass/**/*.scss\" --fix",
-    "gem-build": "rm -fv jekyll-text-theme-*.gem && gem build jekyll-text-theme.gemspec",
-    "gem-push": "gem push jekyll-text-theme-*.gem",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-
-  },
+  "name": "v4",
+  "description": "Personal Website V4",
+  "version": "1.0.0",
+  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kitian616/jekyll-TeXt-theme.git"
+    "url": "https://github.com/bchiang7/v4"
   },
   "keywords": [
-    "jekyll",
-    "jekyll-theme",
-    "jekyll-template"
+    "gatsby"
   ],
-  "author": "Tian Qi",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kitian616/jekyll-TeXt-theme/issues"
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
   },
-  "homepage": "https://github.com/kitian616/jekyll-TeXt-theme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.15.6",
+    "gatsby-image": "^2.2.17",
+    "gatsby-plugin-google-analytics": "^2.1.14",
+    "gatsby-plugin-manifest": "^2.2.13",
+    "gatsby-plugin-netlify": "^2.1.11",
+    "gatsby-plugin-offline": "^3.0.1",
+    "gatsby-plugin-react-helmet": "^3.1.6",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sharp": "^2.2.19",
+    "gatsby-plugin-sitemap": "^2.2.10",
+    "gatsby-plugin-styled-components": "^3.1.4",
+    "gatsby-remark-external-links": "0.0.4",
+    "gatsby-remark-images": "^3.1.20",
+    "gatsby-source-filesystem": "^2.1.20",
+    "gatsby-transformer-remark": "^2.6.21",
+    "gatsby-transformer-sharp": "^2.2.13",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-transition-group": "^4.2.2",
+    "scrollreveal": "^4.0.5",
+    "styled-components": "^4.3.2"
+  },
   "devDependencies": {
-    "eslint": "^5.4.0",
-    "stylelint": "^9.5.0",
-    "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^1.0.0",
-    "stylelint-scss": "^3.3.0"
+    "@upstatement/eslint-config": "0.4.2",
+    "@upstatement/prettier-config": "^0.3.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "gh-pages": "^2.1.1",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
   }
 }
