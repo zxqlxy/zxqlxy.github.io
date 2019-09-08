@@ -27,20 +27,24 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-0eed470dd331ed109623.js"
+    "url": "webpack-runtime-49e0e6d5f9adda5d773e.js"
   },
   {
     "url": "commons-d5d79155d4202ac2526b.js"
   },
   {
-    "url": "app-64b30df0301b46aca161.js"
+    "url": "app-18bb0af8d7c37778eaf2.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-addb63078c517fa81679.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "3da4fc33225c3079b07e3755694cea6b"
+    "revision": "d4069f8250cef9bc64a41df8d1e20d41"
+  },
+  {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "2987f55bd6942e752e5fc01ff9656029"
   },
   {
     "url": "manifest.webmanifest",
@@ -62,12 +66,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/profolio`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-64b30df0301b46aca161.js`))) {
+  if (!resources || !(await caches.match(`/profolio/app-18bb0af8d7c37778eaf2.js`))) {
     return await fetch(event.request)
   }
 
@@ -80,7 +84,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/profolio/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
